@@ -1,11 +1,27 @@
 <script lang="ts">
-	export let name: string;
+	import { Router, Link, Route } from 'svelte-routing';
+	import Main from './pages/Main.svelte';
+
+	export let url = '';
 </script>
 
 <main>
+	<Router url="{url}">
+		<nav>
+			<Link to="/">Home</Link>
+		</nav>
+		<div>
+			<Route path="/"><Main /></Route>
+		</div>
+	</Router>
+</main>
+
+
+<!-- <main>
+
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
+</main> -->
 
 <style>
 	main {
