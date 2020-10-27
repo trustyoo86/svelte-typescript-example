@@ -1,11 +1,14 @@
 <script lang="ts">
+	// dependencies
+	import Router from 'svelte-spa-router';
+
 	// components
 	import Header from './components/layout/Header.svelte';
 	import Footer from './components/layout/Footer.svelte';
 	import Content from './components/layout/Content.svelte';
-	
-	// routes
-	import Routes from './Routes.svelte';
+
+
+	import routes from './routes';
 </script>
 
 <div id="wrap">
@@ -13,7 +16,7 @@
 	<Header />
 	<!-- Contents -->
 	<Content>
-		<Routes />
+		<Router {routes} />
 	</Content>
 	<!-- footer -->
 	<Footer />
