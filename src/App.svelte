@@ -22,5 +22,6 @@
 	<Footer />
 </div>
 
-<style>
+<style lang="scss">
+
 </style>

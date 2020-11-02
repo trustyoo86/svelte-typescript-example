@@ -1,0 +1,30 @@
+body {
+  color: #000;
+  font-size: 75%;
+  line-height: 1.2;
+}
+
+a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+a:active {
+  color: #000;
+  text-decoration: none;
+}
