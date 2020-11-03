@@ -21,7 +21,3 @@
 	<!-- footer -->
 	<Footer />
 </div>
-
-<style lang="scss">
-
-</style>
