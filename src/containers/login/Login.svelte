@@ -1,5 +1,6 @@
 <script lang="ts">
-  import FormItem from '../../components/common/form/FormItem.svelte';
+  import FormItem from '../../components/form/FormItem.svelte';
+  import Button from '../../components/button/Button.svelte';
   import { userInfo } from './store';
   import { login } from './service';
 
@@ -42,9 +43,10 @@
       onInput={onInput} />
     <!-- 로그인 버튼 -->
     <div class="btn-login">
-      <button 
+      <Button
         type="submit"
-        on:click={onSubmit}>로그인</button>
+        onClick={onSubmit}
+        text="로그인" />
     </div>
   </fieldset>
 </form>
