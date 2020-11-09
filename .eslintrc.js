@@ -5,6 +5,10 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: ['./tsconfig.json'],
   },
+  globals: {
+    'describe': false,
+    'test': false,
+  },
   plugins: ['@typescript-eslint','svelte3'],
   extends: [
     'airbnb-typescript',

@@ -44,7 +44,7 @@
     <!-- 로그인 버튼 -->
     <div class="btn-login">
       <Button
-        type="submit"
+        buttonType="submit"
         onClick={onSubmit}
         text="로그인" />
     </div>

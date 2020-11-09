@@ -6,7 +6,7 @@
   // props
   export let buttonType = 'text';
   export let text = '';
-  export let onClick;
+  export let onClick = (e) => {};
 
   // machine
   const toggleMachine = createMachine({
@@ -35,6 +35,7 @@
 </script>
 
 <button
+  data-testid="button"
   type={buttonType}
   on:click={clickHandler}
   class={active ? 'active' : 'inactive'}
